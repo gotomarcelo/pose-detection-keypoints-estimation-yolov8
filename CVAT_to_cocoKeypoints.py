@@ -5,11 +5,11 @@ from xml.dom import minidom
 
 #### ONLY ONE OBJECT PER IMAGE IS ASSUMED ####
 
-out_dir = './out'
+out_dir = 'C:/Users/marcelo.goto/Desktop/yolo-keypoints/pose-detection-keypoints-estimation-yolov8/out'
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
 
-file = minidom.parse('annotations.xml')
+file = minidom.parse('C:/Users/marcelo.goto/Desktop/yolo-keypoints/pose-detection-keypoints-estimation-yolov8/annotations.xml')
 
 images = file.getElementsByTagName('image')
 
